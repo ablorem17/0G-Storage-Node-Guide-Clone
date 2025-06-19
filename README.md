@@ -206,6 +206,24 @@ rm -rf $HOME/0g-storage-node
 
 DONE!!
 
+
+
+
+
+# FAQ-1 ( Process for Local Device & how to restart on next day!)
+
+* So, For local PC All the process is same as VPS: You have to start from [Pre-Requirements 🛠](https://github.com/Mayankgg01/0G-Storage-Node-Guide?tab=readme-ov-file#pre-requirements-)
+
+* 👉Next Day process:
+                  
+- Just Open your wsl/terminal and run
+
+```
+sudo systemctl restart zgs
+```
+
+The service/node will be start after that:
+
 👉 Join TG for more Updates: https://telegram.me/cryptogg
 
 If U have any issue then open a issue on this repo or Dm me on TG~
