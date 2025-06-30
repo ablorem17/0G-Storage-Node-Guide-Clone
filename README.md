@@ -160,6 +160,8 @@ sudo systemctl start zgs
 ```
 
 
+* [Download Snapshot for Faster Sync:](https://github.com/Mayankgg01/0G-Storage-Node-Guide/edit/main/README.md#-how-to-delete-data--start-the-node-again-) 
+
 # Managing Logs
 
 ```
@@ -198,7 +200,7 @@ rm -rf $HOME/0g-storage-node
 
 
 
-# Explorer & Useful Webs
+## Explorer & Useful Webs
 
 * Explorer- (View your txs - Paste Your Address): https://chainscan-galileo.bangcode.id/ OR https://chainscan-galileo.0g.ai/
 
@@ -210,7 +212,7 @@ DONE!!
 
 
 
-# FAQ-1 ( Process for Local Device & how to restart on next day!)
+## 📋FAQ-1 ( Process for Local Device & how to restart on next day!)
 
 * So, For local PC All the process is same as VPS: You have to start from [Pre-Requirements 🛠](https://github.com/Mayankgg01/0G-Storage-Node-Guide?tab=readme-ov-file#pre-requirements-)
 
@@ -223,6 +225,75 @@ sudo systemctl restart zgs
 ```
 
 The service/node will be start after that:
+
+
+
+
+<div align="center">
+
+##  📈 **Download Snapshot For Faster Sync** 🚀
+
+</div>
+
+
+* ⚕️ This Snapshot will help u to sync Faster & it will start from Block -- `294440`
+
+🛠️ Installation Instructions
+
+* Stop The Node & Delete flow db
+
+```
+sudo systemctl stop zgs
+```
+
+```
+rm -rf $HOME/0g-storage-node/run/db/flow_db
+```
+
+* Download and extract the Flow db:
+
+```
+wget https://github.com/Mayankgg01/0G-Storage-Node-Guide/releases/download/v1.0/flow_db.tar.gz \
+  -O $HOME/0g-storage-node/run/db/flow_db.tar.gz && \
+  tar -xzvf $HOME/0g-storage-node/run/db/flow_db.tar.gz -C $HOME/0g-storage-node/run/db/
+```
+
+* Restart Your Service/Node
+
+```
+sudo systemctl restart zgs
+```
+
+✔️Done: Your Node Will start Syncing From Block `294440` 🚀
+
+
+
+<div align="center">
+
+##  🛠 **how to delete data & start the node Again** 🛠
+
+</div>
+
+* If Your Vps storage got full, then u can follow these commands and instruction to Clear it & Do Again:
+
+```
+sudo systemctl stop zgs
+```
+
+
+```
+sudo systemctl disable zgs
+sudo rm /etc/systemd/system/zgs.service
+rm -rf $HOME/0g-storage-node
+```
+
+* After that Start From [Clone the Repository](https://github.com/Mayankgg01/0G-Storage-Node-Guide?tab=readme-ov-file#clone-the-repository)
+
+
+* Dont Forget to Download Snapshot for faster sync: [Snapshot](https://github.com/Mayankgg01/0G-Storage-Node-Guide/edit/main/README.md#-download-snapshot-for-faster-sync-)
+
+Done✅✔️
+
 
 👉 Join TG for more Updates: https://telegram.me/cryptogg
 
