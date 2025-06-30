@@ -160,7 +160,7 @@ sudo systemctl start zgs
 ```
 
 
-* [Download Snapshot for Faster Sync:](https://github.com/Mayankgg01/0G-Storage-Node-Guide/edit/main/README.md#-how-to-delete-data--start-the-node-again-) 
+* [Download Snapshot for Faster Sync:](https://github.com/Mayankgg01/0G-Storage-Node-Guide?tab=readme-ov-file#-download-snapshot-for-faster-sync-) 
 
 # Managing Logs
 
