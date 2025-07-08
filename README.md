@@ -236,7 +236,7 @@ The service/node will be start after that:
 </div>
 
 
-* ⚕️ This Snapshot will help u to sync Faster & it will start from Block -- `294440`
+* ⚕️ This Snapshot will help u to sync Faster & it will start from Block -- `3562700`
 
 🛠️ Installation Instructions
 
@@ -264,7 +264,7 @@ wget https://github.com/Mayankgg01/0G-Storage-Node-Guide/releases/download/v1.0/
 sudo systemctl restart zgs
 ```
 
-✔️Done: Your Node Will start Syncing From Block `294440` 🚀
+✔️Done: Your Node Will start Syncing From Block `3562700` 🚀
 
 
 
