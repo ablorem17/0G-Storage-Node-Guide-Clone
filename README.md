@@ -80,7 +80,7 @@ git clone https://github.com/0glabs/0g-storage-node.git
 ```
 
 ```
-cd 0g-storage-node && git checkout v1.0.0 && git submodule update --init
+cd 0g-storage-node && git checkout v1.1.0 && git submodule update --init
 ```
 
 * Build in release mode 
@@ -294,13 +294,76 @@ rm -rf $HOME/0g-storage-node
 
 Done✅✔️
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+<div align="center">
+
+# 📈 Upgrade to new release {v1.1.0} 
+
+</div>
+
+
+* Stop the service
+
+```
+sudo systemctl stop zgs
+```
+
+* Change Repo ,  Fetch the latest tags and switch to the new release
+
+```
+cd ~/0g-storage-node
+```
+
+```
+git reset --hard
+git clean -fd
+```
+
+```
+git fetch --all
+git checkout v1.1.0
+```
+
+```
+git submodule update --init --recursive
+```
+
+
+* Build the new release
+
+```
+cargo build --release
+```
+
+
+* ❗❗  Dont forget to set configs: [Set Configrations](https://github.com/Mayankgg01/0G-Storage-Node-Guide?tab=readme-ov-file#set-configrations)
+
+* Start your Node
+
+```
+sudo systemctl start zgs
+```
+
+
+* ❗❗ After that Dont Forget to download Snapshot for faster Sync: 
+
+-----------Follow this procees: [📈 Download Snapshot For Faster Sync 🚀](https://github.com/Mayankgg01/0G-Storage-Node-Guide?tab=readme-ov-file#-download-snapshot-for-faster-sync-)
+
+
+🥳Done: U have upgrade to latest Release
+
+
+
+
+```
 👉 Join TG for more Updates: https://telegram.me/cryptogg
 
 If U have any issue then open a issue on this repo or Dm me on TG~
 
 Thank You! Happy Coding!📈
-
+```
 
 
 
